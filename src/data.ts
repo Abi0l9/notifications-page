@@ -1,20 +1,25 @@
 import type { INotifsRecord } from "./types";
 import { genRandomNumber } from "./utils";
+const IMG1 = "../src/assets/dps/img1.png";
+const IMG2 = "../src/assets/dps/img2.png";
+const IMG3 = "../src/assets/dps/img3.png";
+const IMG4 = "../src/assets/dps/img4.png";
+const IMG5 = "../src/assets/dps/img5.png";
 
 const records: INotifsRecord[] = [
   {
     name: "Mark Webber",
-    profileImg: "",
+    profileImg: IMG1,
     notification: {
       id: genRandomNumber(),
       type: "message",
-      content: "We'd like to welcome you to our haven, this weekend",
+      body: "We'd like to welcome you to our haven, this weekend",
       time: "3, October, 2023",
     },
   },
   {
     name: "Kashy Wale",
-    profileImg: "",
+    profileImg: IMG1,
     notification: {
       id: genRandomNumber(),
       type: "postComment",
@@ -24,7 +29,7 @@ const records: INotifsRecord[] = [
   },
   {
     name: "Nur Fasasi",
-    profileImg: "",
+    profileImg: IMG3,
     notification: {
       id: genRandomNumber(),
       type: "postReaction",
@@ -34,7 +39,7 @@ const records: INotifsRecord[] = [
   },
   {
     name: "Janet Doe",
-    profileImg: "",
+    profileImg: IMG4,
     notification: {
       id: genRandomNumber(),
       type: "groupJoin",
@@ -44,7 +49,7 @@ const records: INotifsRecord[] = [
   },
   {
     name: "Baba Ankara",
-    profileImg: "",
+    profileImg: IMG5,
     notification: {
       id: genRandomNumber(),
       type: "groupExit",

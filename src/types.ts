@@ -1,53 +1,33 @@
-interface IUserData {
+export interface IUserData {
   name: string;
   profileImg: string;
 }
 
-interface INotificationData {
+export interface IPostNotificationData {
   id: string;
   time: string;
   content: string;
+  type: "postReaction" | "postComment";
 }
 
-interface IPostReactNotificationData extends INotificationData {
-  type: "postReaction";
-}
-
-interface IPostCommentNotificationData extends INotificationData {
-  type: "postComment";
-}
-
-interface IMessageNotificationData extends INotificationData {
+export interface IMessageNotificationData {
+  id: string;
+  time: string;
+  body: string;
   type: "message";
 }
 
-interface IGroupNotificationData {
+export interface IGroupNotificationData {
   id: string;
   time: string;
   groupName: string;
+  type: "groupJoin" | "groupExit";
 }
 
-interface IGroupJoin extends IGroupNotificationData {
-  type: "groupJoin";
-}
-
-interface IGroupExit extends IGroupNotificationData {
-  type: "groupExit";
-}
-
-// type NotificationType =
-//   | "postReaction"
-//   | "message"
-//   | "postComment"
-//   | "groupJoin"
-//   | "groupExit";
-
-type TNotification =
-  | IPostReactNotificationData
-  | IPostCommentNotificationData
-  | IMessageNotificationData
-  | IGroupJoin
-  | IGroupExit;
+export type TNotification =
+  | IPostNotificationData
+  | IGroupNotificationData
+  | IMessageNotificationData;
 
 export interface INotifsRecord extends IUserData {
   notification: TNotification;
