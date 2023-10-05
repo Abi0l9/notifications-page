@@ -4,6 +4,7 @@ interface IUserData {
 }
 
 interface INotificationData {
+  id: string;
   time: string;
   content: string;
 }
@@ -21,6 +22,7 @@ interface IMessageNotificationData extends INotificationData {
 }
 
 interface IGroupNotificationData {
+  id: string;
   time: string;
   groupName: string;
 }

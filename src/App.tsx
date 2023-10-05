@@ -1,6 +1,10 @@
+import Layout from "./components/Layout";
+
 function App() {
   return (
-    <div className="text-red-500 text-2xl font-semibold">Homie sweet home</div>
+    <div className="">
+      <Layout />
+    </div>
   );
 }
 
