@@ -17,6 +17,14 @@ const Card = ({ data, update }: Props) => {
     update(newData);
   };
 
+  const img = (
+    <img
+      src={profileImg}
+      alt={name.slice(0, 2)}
+      className="h-[100%] w-full rounded-full object-cover"
+    />
+  );
+
   const card = () => {
     if (
       data.notification.type === "groupJoin" ||
@@ -28,12 +36,14 @@ const Card = ({ data, update }: Props) => {
           key={data.notification.id}
           name={name}
           notification={data.notification}
+          profileImg={img}
         />
       );
     } else if (data.notification.type === "message") {
       return (
         <MessageCard
           updateCard={updateCard}
+          profileImg={img}
           key={data.notification.id}
           name={name}
           notification={data.notification}
@@ -46,6 +56,7 @@ const Card = ({ data, update }: Props) => {
       return (
         <PostCard
           updateCard={updateCard}
+          profileImg={img}
           key={data.notification.id}
           name={name}
           notification={data.notification}
@@ -54,24 +65,7 @@ const Card = ({ data, update }: Props) => {
     } else return "You have a notification";
   };
 
-  const img = (
-    <img
-      src={profileImg}
-      alt={name.slice(0, 2)}
-      className="h-[100%] w-full rounded-full object-cover"
-    />
-  );
-
-  return (
-    <div className="grid grid-cols-6 md:grid-cols-12  gap-x-2 min-h-[70px] bg-gray-200 rounded-md">
-      <div className="col-span-1 flex flex-col justify-center items-center">
-        <div className="bg-gray-100 h-[50px] w-[50px] rounded-full">{img}</div>
-      </div>
-      <div className="col-span-5 text-base flex flex-col justify-center cursor-pointer">
-        {card()}
-      </div>
-    </div>
-  );
+  return <>{card()}</>;
 };
 
 export default Card;
