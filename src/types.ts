@@ -8,6 +8,7 @@ export interface IPostNotificationData {
   time: string;
   content: string;
   type: "postReaction" | "postComment";
+  unread: boolean;
 }
 
 export interface IMessageNotificationData {
@@ -15,6 +16,7 @@ export interface IMessageNotificationData {
   time: string;
   body: string;
   type: "message";
+  unread: boolean;
 }
 
 export interface IGroupNotificationData {
@@ -22,6 +24,7 @@ export interface IGroupNotificationData {
   time: string;
   groupName: string;
   type: "groupJoin" | "groupExit";
+  unread: boolean;
 }
 
 export type TNotification =
