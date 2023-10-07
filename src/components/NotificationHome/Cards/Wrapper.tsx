@@ -7,7 +7,7 @@ type Props = {
 const Wrapper = ({ children, clicked, profileImg }: Props) => {
   return (
     <div
-      className={`grid grid-cols-6 md:grid-cols-12  gap-x-2 min-h-[70px] bg-gray-200 hover:bg-gray-300 ${
+      className={`grid grid-cols-6 md:grid-cols-12 px-1 gap-x-2 min-h-[70px] bg-gray-200 hover:bg-gray-300 ${
         !clicked && "bg-blue-100 hover:bg-blue-100"
       } rounded-md`}
     >

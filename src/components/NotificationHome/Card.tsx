@@ -65,7 +65,7 @@ const Card = ({ data, update }: Props) => {
     } else return "You have a notification";
   };
 
-  return <>{card()}</>;
+  return <div className="">{card()}</div>;
 };
 
 export default Card;
