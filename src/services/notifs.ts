@@ -18,3 +18,21 @@ export const markRead = (id: string) => {
   });
   return data;
 };
+
+export const markAllRead = () => {
+  const data = records.map((notif) => {
+    notif.notification.unread = false;
+
+    return notif;
+  });
+  return data;
+};
+
+export const markAllUnread = () => {
+  const data = records.map((notif) => {
+    notif.notification.unread = true;
+
+    return notif;
+  });
+  return data;
+};

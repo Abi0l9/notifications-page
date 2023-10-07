@@ -27,8 +27,8 @@ const ContentWrapper = ({ content }: Props) => {
 
   const body = (
     <div className="grid grid-cols-6 md:grid-cols-12  gap-x-2 my-1">
-      <div className="col-span-1"></div>
-      <div className="col-span-5 mx-1">
+      <div className="col-span-1 md:col-span-2"></div>
+      <div className="col-span-5 md:col-span-10 mx-1">
         <div className="text-xs  p-3 bg-gray-100 hover:bg-blue-100 rounded-md border border-[0.5px] border-gray-300">
           <Fade>{commentTypeContent()}</Fade>
         </div>

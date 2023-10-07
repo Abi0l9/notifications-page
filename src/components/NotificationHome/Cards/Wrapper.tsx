@@ -11,7 +11,7 @@ const Wrapper = ({ children, clicked, profileImg }: Props) => {
         !clicked && "bg-blue-100 hover:bg-blue-100"
       } rounded-md`}
     >
-      <div className="col-span-1 flex flex-col justify-center items-center">
+      <div className="col-span-1 md:col-span-2 flex flex-col justify-center items-center">
         <div className="bg-gray-100 h-[50px] w-[50px] rounded-full">
           {profileImg}
         </div>

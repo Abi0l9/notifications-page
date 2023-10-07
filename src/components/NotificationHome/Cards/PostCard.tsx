@@ -67,7 +67,7 @@ const PostCard = (props: Props) => {
         clicked={props.notification.unread}
         profileImg={props.profileImg}
       >
-        <div className="col-span-5 text-base flex flex-col justify-center cursor-pointer">
+        <div className="col-span-5 md:col-span-10 text-base flex flex-col justify-center cursor-pointer pr-1">
           <div
             className="flex flex-row justify-between items-start w-full"
             onClick={() => {

@@ -26,7 +26,7 @@ const MessageCard = ({ name, notification, updateCard, profileImg }: Props) => {
   return (
     <WithContentWrapper>
       <Wrapper clicked={notification.unread} profileImg={profileImg}>
-        <div className="col-span-5 text-base flex flex-col justify-center cursor-pointer">
+        <div className="col-span-5 md:col-span-10 text-base flex flex-col justify-center cursor-pointer">
           <p
             className=""
             onClick={() => {
