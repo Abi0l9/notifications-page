@@ -24,7 +24,10 @@ const records: INotifsRecord[] = [
     notification: {
       id: genRandomNumber(),
       type: "postComment",
-      content: "The sky is blue",
+      content: {
+        picUrl: IMG5,
+        message: "You look amazing!",
+      },
       time: "3, October, 2023",
       unread: true,
     },

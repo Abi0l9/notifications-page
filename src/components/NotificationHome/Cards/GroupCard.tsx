@@ -20,12 +20,7 @@ const GroupCard = (props: Props) => {
   );
 
   return (
-    <Wrapper clicked={props.notification.unread}>
-      <div className="col-span-1 flex flex-col justify-center items-center">
-        <div className="bg-gray-100 h-[50px] w-[50px] rounded-full">
-          {props.profileImg}
-        </div>
-      </div>
+    <Wrapper clicked={props.notification.unread} profileImg={props.profileImg}>
       <div className="col-span-5 text-base flex flex-col justify-center cursor-pointer">
         <p onClick={() => props.updateCard(props.notification.id)} className="">
           <span className="font-semibold"> {props.name}</span>{" "}

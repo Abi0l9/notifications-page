@@ -3,10 +3,15 @@ export interface IUserData {
   profileImg: string;
 }
 
+export type CommentBody = {
+  picUrl: string;
+  message: string;
+};
+
 export interface IPostNotificationData {
   id: string;
   time: string;
-  content: string;
+  content: CommentBody | string;
   type: "postReaction" | "postComment";
   unread: boolean;
 }
