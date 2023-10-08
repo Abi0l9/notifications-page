@@ -26,7 +26,7 @@ const records: INotifsRecord[] = [
       type: "postComment",
       content: {
         picUrl: IMG5,
-        message: "You look amazing!",
+        message: "This food dey hungry me!",
       },
       time: "40min ago",
       unread: true,
