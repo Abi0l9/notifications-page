@@ -1,6 +1,6 @@
 import type { INotifsRecord } from "./types";
 import { genRandomNumber } from "./utils";
-const IMG1 = "../src/assets/dps/img1.png";
+const IMG1 = "https://unsplash.com/photos/rDEOVtE7vOs/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fHx8MTY5NjczNTU3MXww&force=true&w=1920";
 const IMG2 = "../src/assets/dps/img2.jpg";
 const IMG3 = "../src/assets/dps/img3.jpg";
 const IMG4 = "../src/assets/dps/img4.jpg";
