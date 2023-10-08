@@ -14,7 +14,7 @@ const records: INotifsRecord[] = [
       id: genRandomNumber(),
       type: "message",
       body: "We'd like to welcome you to our haven, this weekend",
-      time: "1m ago",
+      time: "1min ago",
       unread: true,
     },
   },
